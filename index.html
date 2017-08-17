@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TypeScript</title>
+</head>
+<body>
+    <script src="compile\test.js" type="text/javascript"></script>
+    <script>
+        function buttonClick() {
+            var ts = new MyModule.MyClass();
+            var text = ts.getGrettingsMessage(document.getElementById("textBox").value);
+            document.getElementById("labelText").textContent = text;
+        }
+    </script>
+
+    <input type="text" id="textBox" ></input>
+    <button onclick="buttonClick()">Click Me!</button> <br/>
+    <label id="labelText"></label>
+</body>
+</html>
